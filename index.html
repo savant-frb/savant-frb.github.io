@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>savant's fast running bulls</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-950 text-white font-sans antialiased selection:bg-white selection:text-black">
+
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-white/5 px-6 md:px-12 lg:px-16 py-5">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#home" class="text-sm md:text-lg font-black tracking-wider hover:text-neutral-300 uppercase">
+        savant's fast running bulls
+      </a>
+      <nav class="flex space-x-4 md:space-x-10 text-xs md:text-sm tracking-widest text-neutral-300 font-medium">
+        <a href="#home" class="hover:text-white border-b border-transparent hover:border-white pb-1">
+          OVERVIEW
+                </a>
+        <a href="#details" class="hover:text-white border-b border-transparent hover:border-white pb-1">
+          DETAILS
+                </a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home"
+    class="relative w-full h-screen overflow-hidden flex flex-col justify-end p-6 md:p-12 lg:p-16 pb-12 md:pb-20">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80"
+        alt="savant's fast running bulls Background"
+        class="w-full h-full object-cover object-center scale-100 filter brightness-75"
+        onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80'">
+      <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/50 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/60 via-transparent to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-3xl pt-24">
+      <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 md:mb-6 leading-none uppercase">
+        savant's<br>fast running bulls
+      </h1>
+      <p class="text-neutral-300 text-sm md:text-base lg:text-lg leading-relaxed font-light max-w-lg mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="flex items-center space-x-4">
+        <span class="text-xs uppercase tracking-widest text-neutral-400">Discord, Kakao Talk</span>
+      </div>
+    </div>
+
+    <div class="absolute bottom-6 right-6 md:bottom-12 md:right-12 z-10 flex flex-col items-center space-y-2">
+      <span class="text-[10px] tracking-widest text-neutral-500 uppercase">Scroll</span>
+      <div class="w-[1px] h-12 bg-neutral-700"></div>
+    </div>
+  </section>
+
+  <section id="details"
+    class="relative bg-neutral-950 z-10 px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-32 border-t border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col justify-between min-h-[40vh]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div class="flex flex-col">
+          <div class="aspect-video w-full overflow-hidden rounded-lg mb-6 border border-white/10">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Concept Image" 
+                 class="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition duration-500"
+                 onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80'">
+          </div>
+          <h3 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">01 / Concept</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            불필요한 요소를 모두 제거하고 본질만 남겼습니다. 시각적인 편안함과 구조적인 완벽함이 조화를 이룹니다.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="aspect-video w-full overflow-hidden rounded-lg mb-6 border border-white/10">
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                 alt="Identity Image" 
+                 class="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition duration-500"
+                 onerror="this.src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80'">
+          </div>
+          <h3 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">02 / Identity</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            모든 디테일에 의미가 담겨 있습니다. 사용자가 브랜드를 직접 마주하는 매 순간을 특별하게 설계했습니다.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="aspect-video w-full overflow-hidden rounded-lg mb-6 border border-white/10">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" 
+                 alt="Vision Image" 
+                 class="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition duration-500"
+                 onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80'">
+          </div>
+          <h3 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">03 / Vision</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            우리는 과거의 유산과 미래의 가능성을 연결합니다. 경계를 허무는 실험을 멈추지 않을 것입니다.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-neutral-900 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div class="space-y-1">
+          <p class="text-neutral-500 text-xs tracking-wider">
+            &copy; 2026 savant's fast running bulls Co. All rights reserved.
+          </p>
+          <p class="text-neutral-600 text-[11px]">
+            Designed with minimalist philosophy and modern technology.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs text-neutral-500">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-white">System Status</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAmoUlarY5HIwbFvA9GEjfFMyWQj8rQfkY",
+      authDomain: "savant-frb.firebaseapp.com",
+      projectId: "savant-frb",
+      storageBucket: "savant-frb.firebasestorage.app",
+      messagingSenderId: "857341291421",
+      appId: "1:857341291421:web:1dbb4dfb23e2d122629d74",
+      measurementId: "G-RGG9E8SR4C"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
