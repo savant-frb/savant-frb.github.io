@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>savant's fast running bulls</title>
+  <title>Savant's Fast Running Bulls</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -44,7 +44,7 @@
   </header>
 
   <section id="home"
-    class="relative w-full h-screen overflow-hidden flex flex-col justify-end p-6 md:p-12 lg:p-16 pb-24 md:pb-24">
+    class="relative w-full h-screen overflow-hidden flex flex-col justify-end p-6 md:p-12 lg:p-16 pb-16 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img id="hero-bg" src="img/hero.png" alt="Background" class="w-full h-full object-cover object-[20%_50%] filter brightness-100
               scale-125 transition-transform duration-[2000ms] ease-out">
@@ -64,18 +64,21 @@
       <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 md:mb-6 leading-none uppercase">
         savant's<br>fast running bulls
       </h1>
-      <p class="text-neutral-300 text-sm md:text-base lg:text-lg leading-relaxed font-light max-w-lg mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+      <p class="text-neutral-300 text-sm md:text-base lg:text-lg leading-relaxed max-w-lg mb-4">
+        커뮤니티, 유튜브, 3D 모델링, 그리고 게임 제작까지<br>차량을 중심으로 한 끝없는 열정
       </p>
       <div class="flex items-center space-x-4">
-        <span class="text-xs uppercase tracking-widest text-neutral-400">Discord, Kakao Talk</span>
+        <span class="inline-flex items-center gap-4 text-xs uppercase tracking-widest text-neutral-400">
+          <a href="https://discord.gg/XKmsqrPvKq"><img height="32" width="32" src="https://cdn.simpleicons.org/Discord/eee" /></a>
+          <a href="https://open.kakao.com/o/gWSb7INg"><img height="32" width="32" src="https://cdn.simpleicons.org/kakaotalk/eee" /></a>
+          <a href=""><img height="32" width="32" src="https://cdn.simpleicons.org/roblox/eee" /></a>
+        </span>
       </div>
     </div>
 
     <div class="absolute bottom-6 right-6 md:bottom-12 md:right-12 z-10 flex flex-col items-center space-y-2">
-      <span class="text-[10px] tracking-widest text-neutral-500 uppercase">Scroll</span>
-      <div class="w-[1px] h-12 bg-neutral-700"></div>
+      <span class="text-[10px] tracking-widest text-neutral-500 font-bold uppercase">Scroll</span>
+      <div class="w-[2px] h-12 bg-neutral-700"></div>
     </div>
   </section>
 
@@ -85,22 +88,22 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
         <div class="flex flex-col">
           <div class="aspect-video w-full overflow-hidden rounded-lg mb-6 border border-white/10">
-            <img src="https://placehold.co/800x600/CCCCCC/666666?text=800x600&font=roboto" alt="Concept Image"
+            <img src="img/KD.webp" alt="Concept Image"
               class="w-full h-full object-cover">
           </div>
           <h3 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">01 // Group Chat</h3>
           <p class="text-neutral-400 text-sm leading-relaxed">
-            저희 커뮤 들어와요
+            <a href="https://open.kakao.com/o/gWSb7INg" class="font-bold underline cursor-pointer">저희 채팅방</a> 들어와요
           </p>
         </div>
         <div class="flex flex-col">
           <div class="aspect-video w-full overflow-hidden rounded-lg mb-6 border border-white/10">
             <img src="https://img.youtube.com/vi/sJafLluMDKY/maxresdefault.jpg" alt="Youtube Image"
-              class="w-full h-full object-cover">
+              class="w-full h-full object-cover cursor-pointer" onclick="window.open('https://www.youtube.com/@Savantgarde-s4s')">
           </div>
           <h3 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">02 // Youtube Channel</h3>
           <p class="text-neutral-400 text-sm leading-relaxed">
-            <a href="" class="font-bold underline cursor-pointer">저희 채널</a>에서 영상 보세요
+            <a href="https://www.youtube.com/@Savantgarde-s4s" class="font-bold underline cursor-pointer">저희 채널</a>에서 영상 보세요
           </p>
         </div>
         <div class="flex flex-col">
@@ -109,7 +112,7 @@
           </div>
           <h3 class="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-4">03 // Play Game</h3>
           <p class="text-neutral-400 text-sm leading-relaxed">
-            같이 게임해요
+            <a href="" class="font-bold underline cursor-pointer">같이 게임</a>해요
           </p>
         </div>
       </div>
@@ -126,9 +129,8 @@
         </div>
 
         <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs text-neutral-500">
-          <a href="#" class="hover:text-white">Privacy Policy</a>
-          <a href="#" class="hover:text-white">Terms of Service</a>
-          <a href="#" class="hover:text-white">System Status</a>
+          <a href="" class="hover:text-white">Privacy Policy</a>
+          <a href="" class="hover:text-white">Terms of Service</a>
         </div>
       </div>
     </div>
